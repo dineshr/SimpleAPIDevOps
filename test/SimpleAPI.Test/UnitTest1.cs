@@ -14,7 +14,7 @@ namespace SimpleAPI.Test
     {
         // EnvironmentVariableTarget repoMock = new Mock<ClassroomService>();
 
-        private readonly static IClassroomService _classroomService;
+        private readonly static IClassroomService _classroomService = null;
         ClassRoomController controller = new ClassRoomController(_classroomService);
 
 
@@ -22,6 +22,7 @@ namespace SimpleAPI.Test
         public void GetReturnsSomethingString_ShouldReturnValue()
         {
             //Arrange
+
             var returnValue = controller.Get(3);
             Assert.Equal("Something goes here with id: 3", returnValue.Value);
 
