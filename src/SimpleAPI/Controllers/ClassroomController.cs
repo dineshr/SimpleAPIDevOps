@@ -49,7 +49,7 @@ namespace SchoolApp.Controllers
                 return NotFound();
             }
             string result = string.Empty;
-            result = "Something goes here with id: brake test" + id.ToString();
+            result = "Something goes here with id: " + id.ToString();
             return result;
         }
     }
