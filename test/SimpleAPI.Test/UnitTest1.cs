@@ -24,7 +24,7 @@ namespace SimpleAPI.Test
             //Arrange
 
             var returnValue = controller.Get(3);
-            Assert.Equal("Something goes here with id: 3", returnValue.Value);
+            Assert.Equal("Message content here with id: 3", returnValue.Value);
 
         }
 
